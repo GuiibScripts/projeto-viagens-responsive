@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-family: "Poppins", sans-serif;
+
+
+    --brand-color: #EF5F4C;
+    --bg-color: #FFFFFF;
+    --surface-color: #F5F5F5;
+    --skeleton-color: #D9D9D9;
+    --shape-transparency: #FFFFFF;
+
+    --text-color-primary: #313131;
+    --text-color-secondary: #6C6C6C;
+
+    --font-title: bold 2rem/125% var(--font-family);
+    --font-md: normal 0.875rem/170% var(--font-family);
+    --font-sm: normal 0.75rem/170% var(--font-family);
+}
+
+body {
+    
+
+
+
+    
+
+}
