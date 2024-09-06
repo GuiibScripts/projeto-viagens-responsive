@@ -1,6 +1,15 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
 * {
     margin: 0;
     padding: 0;
+    font: inherit;
+
 }
 
 :root {
@@ -19,13 +28,28 @@
     --font-title: bold 2rem/125% var(--font-family);
     --font-md: normal 0.875rem/170% var(--font-family);
     --font-sm: normal 0.75rem/170% var(--font-family);
+
+    --py-sm: 1.25rem;
+    --py-lg: 2rem;
+    --px-sm: 1rem;
+    --px-lg: 2rem;    
+
 }
 
-body {
-    
+@media (width <= 22.5em) {
+    :root {
+        --font-title: bold 1.5rem/125% var(--font-family);
 
 
+    }
+}
 
-    
+html {
+    font: var(--font-md);
+    color: var(--text-color-primary);
+    background-color: var(--bg-color);
+}
 
+h1 {
+    font: var(--font-title);
 }

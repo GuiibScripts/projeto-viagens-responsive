@@ -1,0 +1,31 @@
+.container {
+    display: block;
+    --max-width: 22.5rem;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    margin-inline: auto;
+}
+
+@media (width >= 22.5rem) {
+    .container {
+        --max-width: 80rem;
+    }
+}
+
+
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gap-lg {
+    gap: 1rem;
+}
