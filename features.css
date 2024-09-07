@@ -1,0 +1,35 @@
+#galeria {
+    padding: 0;
+    margin-inline: 2rem;
+    
+}
+
+#galeria div{
+    padding-bottom: 24px;
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+
+    & img {
+        width: 286px;
+    }
+}
+
+@media (width <= 22.5rem) {
+    #galeria div{
+        width: 328px;
+        display: block;
+        margin: auto;
+        /* background-color: red; */
+
+    }
+
+    #galeria div img{
+        width: 310px;
+        margin-right: 1rem;
+
+
+    }
+}
