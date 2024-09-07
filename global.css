@@ -47,8 +47,8 @@
 html {
     font: var(--font-md);
     color: var(--text-color-primary);
-    background-color: var(--bg-color);
 }
+
 
 h1 {
     font: var(--font-title);

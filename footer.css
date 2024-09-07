@@ -1,0 +1,47 @@
+#footer {
+    padding-inline: 32px;
+    & footer {
+        padding-block: 25px;
+        color: var(--text-color-secondary);
+        gap: 25px;
+
+        & p:nth-child(1) {
+            margin-right: auto;
+        }
+
+        & p:nth-child(2) {
+
+        }
+
+    }
+}
+
+@media (width <= 25.5rem) {
+    #footer {
+        width: 328px;
+        padding: 0;
+    }
+    
+
+    #footer footer{
+
+        padding: 0;
+        display: grid;
+        grid-template-areas: 
+        "A A"
+        "B C"
+        ;
+        justify-content: center;
+    }
+
+    #A {
+        margin-left: auto;
+        grid-area: A;
+    }
+
+    #B {
+        grid-area: B;
+    }
+
+
+}
