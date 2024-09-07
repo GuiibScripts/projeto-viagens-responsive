@@ -1,23 +1,41 @@
+.mobile-hidden:hover {
+    color: var(--brand-color);
+    text-decoration: underline;
+
+}
+
+
 header {
+    background-color: var(--bg-color);
 
-    & div {
-        padding-block: 20px;
-        
+    & img {
+        width: var(--py-lg); 
     }
 
-    & #logo {
+    & h1 {
         color: var(--brand-color);
-        font-size: 20px;
-        margin-right: auto;
+        font: var(--font-title);
     }
-   
 
-    & nav a > img {
-        width: 2rem;
-        vertical-align: middle;
+
+
+    & div + div {
+        margin-left: auto;
+    }
+
+}
+
+header:nth-child(1) {
+    margin-block: var(--py-lg);
+
+}
+
+
+@media (width <= 22.5rem) {
+    header:nth-child(1) {
+        margin-block: var(--py-sm);
     
     }
-
 }
 
 @media (width <= 22.5rem) {
@@ -25,3 +43,5 @@ header {
         display: none;
     }
 }
+
+
